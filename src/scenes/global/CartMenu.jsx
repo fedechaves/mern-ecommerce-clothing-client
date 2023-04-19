@@ -8,10 +8,10 @@ import {
   decreaseCount,
   increaseCount,
   removeFromCart,
-  setIsCarOpen,
+  setIsCartOpen,
 } from "../../state";
 import { useNavigate } from "react-router-dom";
-import { Box, Divider, IconButton, Typography } from "@mui/material";
+import { Box, Button, Divider, IconButton, Typography } from "@mui/material";
 
 const FlexBox = styled(Box)`
   display: flex;
