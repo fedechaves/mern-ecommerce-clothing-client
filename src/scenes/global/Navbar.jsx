@@ -21,7 +21,7 @@ const Navbar = () => {
       alignItems="center"
       width="100%"
       heght="60px"
-      backgroundColor="black"
+      backgroundColor="white"
       position="fixed"
       top="0"
       left="0"
