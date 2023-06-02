@@ -28,8 +28,7 @@ const ItemDetails = () => {
       `https://mern-ecommerce-clothing.vercel.app/api/items/${itemId}?populate=image`,
       {
         method: "GET",
-        headers: { "Content-Type": "application/json",
-                  "Access-Control-Allow-Origin": "*" },
+        headers: { "Content-Type": "application/json" },
       }
     );
     const itemJson = await item.json();
@@ -41,8 +40,7 @@ const ItemDetails = () => {
       `https://mern-ecommerce-clothing.vercel.app/api/items?populate=image`,
       {
         method: "GET",
-        headers: { "Content-Type": "application/json",
-                  "Access-Control-Allow-Origin": "*" },
+        headers: { "Content-Type": "application/json"},
       }
     );
     const itemsJson = await items.json();
