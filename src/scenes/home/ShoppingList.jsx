@@ -22,7 +22,9 @@ const ShoppingList = () => {
   async function getItems() {
     const items = await fetch(
       "https://mern-ecommerce-clothing.vercel.app/api/items?populate=image",
-      { method: "GET" }
+      { method: "GET" ,
+      headers: { "Content-Type": "application/json",
+                  "Access-Control-Allow-Origin": "*" }},
     );
     const itemsJson = await items.json();
     dispatch(setItems(itemsJson.data));

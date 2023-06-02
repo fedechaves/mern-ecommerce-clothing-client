@@ -49,7 +49,8 @@ const Checkout = () => {
 
     const response = await fetch("https://mern-ecommerce-clothing.vercel.app/api/orders", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json",
+                  "Access-Control-Allow-Origin": "*" },
       body: JSON.stringify(requestBody),
     });
     const session = await response.json();
