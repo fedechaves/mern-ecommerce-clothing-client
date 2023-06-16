@@ -47,7 +47,7 @@ const Checkout = () => {
       })),
     };
 
-    const response = await fetch("https://mern-ecommerce-clothing.vercel.app/api/orders", {
+    const response = await fetch("https://strapi-production-clothing.up.railway.app/api/orders", {
       method: "POST",
       headers: { "Content-Type": "application/json"},
       body: JSON.stringify(requestBody),
