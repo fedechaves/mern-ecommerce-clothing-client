@@ -21,7 +21,7 @@ const ShoppingList = () => {
 
   async function getItems() {
     const items = await fetch(
-      "https://mern-ecommerce-clothing.vercel.app/api/items?populate=image",
+      "https://strapi-production-clothing.up.railway.app/api/items?populate=image",
       { method: "GET" ,
       headers: { "Content-Type": "application/json" }},
     );

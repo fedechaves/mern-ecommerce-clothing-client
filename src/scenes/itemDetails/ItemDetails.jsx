@@ -25,7 +25,7 @@ const ItemDetails = () => {
 
   async function getItem() {
     const item = await fetch(
-      `https://mern-ecommerce-clothing.vercel.app/api/items/${itemId}?populate=image`,
+      `https://strapi-production-clothing.up.railway.app/api/items/${itemId}?populate=image`,
       {
         method: "GET",
         headers: { "Content-Type": "application/json" },
@@ -37,7 +37,7 @@ const ItemDetails = () => {
 
   async function getItems() {
     const items = await fetch(
-      `https://mern-ecommerce-clothing.vercel.app/api/items?populate=image`,
+      `https://strapi-production-clothing.up.railway.app/api/items?populate=image`,
       {
         method: "GET",
         headers: { "Content-Type": "application/json"},
@@ -61,7 +61,7 @@ const ItemDetails = () => {
             alt={item?.name}
             width="100%"
             height="100%"
-            src={`https://mern-ecommerce-clothing.vercel.app${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+            src={`https://strapi-production-clothing.up.railway.app${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
             style={{ objectFit: "contain" }}
           />
         </Box>
